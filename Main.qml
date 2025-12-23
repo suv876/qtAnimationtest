@@ -144,7 +144,7 @@ Window {
         onClicked: {
             paraAni.start()
         }
-        SequentialAnimation  {
+        ParallelAnimation  {
             id: paraAni
             loops: Animation.Infinite
             PropertyAnimation {
@@ -155,7 +155,7 @@ Window {
                 to: 150
                 duration: 10000
             }
-            PauseAnimation { duration: 5000 }
+            //PauseAnimation { duration: 5000 }
             PropertyAnimation {
                 id: idProAni_w
                 target: idBtn1
